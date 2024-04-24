@@ -1,0 +1,39 @@
+<!-- layout.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UT-NodeJS 중간고사 | Thanks</title>
+
+    <!-- 학생 이름과 학번 -->
+    <meta name="author" content="곽계영" />
+    <meta name="description" content="2026003" />
+
+    <!-- CSS 파일에 대한 link테그를 수정하십시오 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 768px)"
+      href="/css/style.small.css"
+    />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/public/css/confetti.css" />
+
+    <!-- JS 파일에 대한 script테그를 수정하십시오 -->
+    <script defer src="/js/functions.js"></script>
+  </head>
+
+  <body>
+    <%- include('partials/header') %> 
+    <%- body %>
+    <%- include('partials/footer') %>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+<!--
+    [노트] 레이아웃 파일은 방문하는 모든 페이지상에서 렌더링된다.
+    한 번 < %- body % >의 전후로 HTML 콘텐츠를 추가해보라. 
+    모든 페이지에 추가 내용이 반영될 것이다.
+-->
+</html>
